@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilete</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    
+</head>
+<body>
+    <div class="top-bar">
+        <div class="tab"><a href="home.php">Home</a></div>
+        <div class="tab"><a href="review.php">Recenzii</a></div>
+        <div class="tab"><a href="ticket.html">Bilete</a></div>
+        <div class="tab"><a href="activity.html">Activitate</a></div>
+</div>
+    <div class="searchOrder">    
+            <form id="formSearch">
+                <h1 style="color: rgb(17, 9, 9); margin-top: 50px;">Cauta detalii despre un spectator</h1>
+                <input type="text" name="username" id="username" placeholder="username">
+                <button id="submitDetailsOrder">Vezi detalii spectator</button>
+            </form>
+            <div id="orderDetails" class="orderShow"></div>
+        </div>
+    
+    <script type="text/javascript">
+    document.getElementById("formSearch").addEventListener("submit", function(event) {
+        event.preventDefault();
+        getSpectator(), getSpectator1(), getSpectator2();
+    });
+    
+    
+
+    function getSpectator() {
+        var spectatorId = document.getElementById("username").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "spectator.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Handle the response here
+                document.getElementById("orderDetails").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send("username=" + spectatorId);
+    }
+
+    function getSpectator1() {
+        var spectatorId = document.getElementById("username").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "spectator1.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Handle the response here
+                document.getElementById("orderDetails").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send("username=" + spectatorId);
+
+    }
+    
+    function getSpectator2() {
+        var spectatorId = document.getElementById("username").value;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "spectator2.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                // Handle the response here
+                document.getElementById("orderDetails").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send("username=" + spectatorId);
+   
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background-image: url('back.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    object-fit: fill;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Adaugă margin-top pentru a separa "box-urile" */
+
+.program-box {
+    border: 1px solid #000;
+    border-radius: 2em;
+    border-color: black;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+    color: black;
+}
+.program-box2 {
+    border: 1px solid #000;
+    border-radius: 2em;
+    border-color: black;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+    color: black;
+    height: 1200px;
+}
+.program-box3 {
+    border: 1px solid #000;
+    border-radius: 2em;
+    border-color: black;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+    color: black;
+    height: 500px;
+}
+.program-box4 {
+    border: 1px solid #000;
+    border-radius: 2em;
+    border-color: black;
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px;
+    color: black;
+    height: 200px;
+    text-align: center;
+}
+.dans-box {
+    text-align: left;
+}
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    justify-content: space-between;
+}
+    
+.tab {
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    float: right;
+}
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 7px;
+
+
+    flex-direction: column;
+}
+
+.bottom-bar a {
+    color: white;
+    margin: 3px 0;
+    text-decoration: none;
+    float: right;
+    cursor: pointer;
+}

@@ -1,0 +1,87 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url(back_log.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Arial';
+}
+.login{
+        width: 380px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 100px;
+        
+        opacity: 0.6;
+        border-radius: 10px ;
+        background-color: #ffffff;
+
+}
+h2{
+    text-align: center;
+    color: #3c0338;
+    
+   
+}
+label{
+    color: #5a0f4c;
+    font-size: 17px;
+}
+#username, #Lname, #Fname{
+    width: 300px;
+    height: 30px;
+    border: 2px #f4b3f1;
+    border-style: inset;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#parola{
+    width: 300px;
+    height: 30px;
+    border: 2px #f4b3f1;
+    border-style: inset;
+    border-radius: 3px;
+    padding-left: 8px;
+    
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: rgb(109, 7, 139);
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.lbutton {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  background-color: #b769ec;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* Hover effect for the button */
+.lbutton:hover {
+  background-color: #a10e9f;
+}
